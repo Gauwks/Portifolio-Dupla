@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPhp } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import './Competencias.css';
 
@@ -21,6 +21,10 @@ function Competencias() {
           <div className="CardJS maria-card">
             <FaJsSquare />
             <p>JavaScript</p>
+          </div>
+          <div className="CardSQL maria-card">
+            <FaPhp />
+            <p>PHP</p>
           </div>
           <div className="CardReact maria-card">
             <FaReact />
@@ -56,8 +60,8 @@ function Competencias() {
             <p>React</p>
           </div>
           <div className="CardSQL rafael-card">
-            <GrMysql />
-            <p>MySQL</p>
+            <FaPhp />
+            <p>PHP</p>
           </div>
         </div>
       </section>

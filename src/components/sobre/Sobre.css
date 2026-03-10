@@ -1,0 +1,246 @@
+.container-sobre {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8rem 2rem 2rem;
+  min-height: 100vh;
+}
+
+.titulo-sobre {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* Seção Introdução */
+.sobre-intro {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  border-left: 4px solid #0066ff;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Seção Pessoas */
+.pessoas-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pessoa-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  border-top: 4px solid;
+  transition: all 0.3s ease;
+}
+
+.pessoa-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.maria-card-sobre {
+  border-top-color: #0066ff;
+}
+
+.maria-card-sobre:hover {
+  box-shadow: 0 12px 24px rgba(0, 102, 255, 0.2);
+}
+
+.rafael-card-sobre {
+  border-top-color: #7c3aed;
+}
+
+.rafael-card-sobre:hover {
+  box-shadow: 0 12px 24px rgba(124, 58, 237, 0.2);
+}
+
+.pessoa-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.maria-titulo {
+  color: #0066ff;
+}
+
+.rafael-titulo {
+  color: #7c3aed;
+}
+
+.pessoa-info {
+  margin-bottom: 1.5rem;
+}
+
+.info-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+}
+
+.maria-card-sobre .info-label {
+  color: #0066ff;
+}
+
+.rafael-card-sobre .info-label {
+  color: #7c3aed;
+}
+
+.info-text {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Seção Escola */
+.escola-info {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #646cff;
+}
+
+.titulo-escola {
+  font-size: 1.6rem;
+  color: #646cff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.texto-escola {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-sobre {
+    padding: 7rem 1rem 2rem;
+  }
+
+  .titulo-sobre {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .pessoas-sobre {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .pessoa-card {
+    padding: 1.5rem;
+  }
+
+  .pessoa-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-label {
+    font-size: 0.95rem;
+  }
+
+  .info-text {
+    font-size: 0.9rem;
+  }
+
+  .sobre-intro {
+    padding: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .escola-info {
+    padding: 1.5rem;
+  }
+
+  .titulo-escola {
+    font-size: 1.4rem;
+  }
+
+  .texto-escola {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-sobre {
+    padding: 6rem 0.75rem 1rem;
+  }
+
+  .titulo-sobre {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pessoas-sobre {
+    gap: 1rem;
+  }
+
+  .pessoa-card {
+    padding: 1rem;
+  }
+
+  .pessoa-titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .pessoa-info {
+    margin-bottom: 1rem;
+  }
+
+  .info-label {
+    font-size: 0.85rem;
+  }
+
+  .info-text {
+    font-size: 0.8rem;
+  }
+
+  .sobre-intro {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .escola-info {
+    padding: 1rem;
+  }
+
+  .titulo-escola {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .texto-escola {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
