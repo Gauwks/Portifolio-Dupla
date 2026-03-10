@@ -1,0 +1,327 @@
+.container-Comp {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container-Comp h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Seções de Pessoas */
+.pessoa-section {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+}
+
+.pessoa-nome {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid;
+  text-align: center;
+}
+
+.maria-nome {
+  color: #0066ff;
+  border-bottom-color: #0066ff;
+}
+
+.rafael-nome {
+  color: #7c3aed;
+  border-bottom-color: #7c3aed;
+}
+
+/* Habilidades Grid */
+.habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards de Habilidades */
+.CardHTML,
+.CardCSS,
+.CardJS,
+.CardReact,
+.CardSQL,
+.CardNode,
+.CardPHP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+.CardHTML,
+.CardCSS,
+.CardJS,
+.CardReact,
+.CardSQL,
+.CardNode,
+.CardPHP {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.CardHTML p,
+.CardCSS p,
+.CardJS p,
+.CardReact p,
+.CardSQL p,
+.CardNode p,
+.CardPHP p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Cards Maria Clara */
+.maria-card {
+  background-color: rgba(0, 102, 255, 0.1);
+  border-color: #0066ff;
+  color: #0066ff;
+}
+
+.maria-card:hover {
+  background-color: rgba(0, 102, 255, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 102, 255, 0.3);
+}
+
+.maria-card p {
+  color: #ffffff;
+}
+
+/* Cards Rafael D'Angelo */
+.rafael-card {
+  background-color: rgba(124, 58, 237, 0.1);
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.rafael-card:hover {
+  background-color: rgba(124, 58, 237, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
+.rafael-card p {
+  color: #ffffff;
+}
+
+/* Seção Aprofundando */
+.aprofundando {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #333333;
+}
+
+.aprofundando h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #cccccc;
+}
+
+.maria-aprofundando h3 {
+  color: #0066ff;
+}
+
+.rafael-aprofundando h3 {
+  color: #7c3aed;
+}
+
+/* Seção Projetos */
+.projetos {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+}
+
+.projetos h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.suindara,
+.bibliotecaPHP,
+.suporteTIPHP {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #242424;
+  border-left: 4px solid;
+  transition: all 0.3s ease;
+}
+
+.suindara {
+  border-left-color: #0066ff;
+}
+
+.suindara:hover {
+  background-color: rgba(0, 102, 255, 0.1);
+  transform: translateX(8px);
+}
+
+.bibliotecaPHP {
+  border-left-color: #7c3aed;
+}
+
+.bibliotecaPHP:hover {
+  background-color: rgba(124, 58, 237, 0.1);
+  transform: translateX(8px);
+}
+
+.suporteTIPHP {
+  border-left-color: #646cff;
+}
+
+.suporteTIPHP:hover {
+  background-color: rgba(100, 108, 255, 0.1);
+  transform: translateX(8px);
+}
+
+.suindara h3,
+.bibliotecaPHP h3,
+.suporteTIPHP h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.suindara p,
+.bibliotecaPHP p,
+.suporteTIPHP p {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-Comp {
+    padding: 1rem;
+  }
+
+  .container-Comp h1 {
+    font-size: 2rem;
+  }
+
+  .pessoa-nome {
+    font-size: 1.5rem;
+  }
+
+  .habilidades {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+  }
+
+  .CardHTML,
+  .CardCSS,
+  .CardJS,
+  .CardReact,
+  .CardSQL,
+  .CardNode,
+  .CardPHP {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .pessoa-section {
+    padding: 1.5rem;
+  }
+
+  .projetos {
+    padding: 1.5rem;
+  }
+
+  .projetos h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-Comp {
+    padding: 0.75rem;
+  }
+
+  .container-Comp h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .pessoa-nome {
+    font-size: 1.3rem;
+  }
+
+  .habilidades {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .CardHTML,
+  .CardCSS,
+  .CardJS,
+  .CardReact,
+  .CardSQL,
+  .CardNode,
+  .CardPHP {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  .CardHTML p,
+  .CardCSS p,
+  .CardJS p,
+  .CardReact p,
+  .CardSQL p,
+  .CardNode p,
+  .CardPHP p {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .pessoa-section {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .aprofundando h3 {
+    font-size: 1rem;
+  }
+
+  .suindara,
+  .bibliotecaPHP,
+  .suporteTIPHP {
+    padding: 1rem;
+  }
+
+  .suindara h3,
+  .bibliotecaPHP h3,
+  .suporteTIPHP h3 {
+    font-size: 1.1rem;
+  }
+
+  .suindara p,
+  .bibliotecaPHP p,
+  .suporteTIPHP p {
+    font-size: 0.85rem;
+  }
+}
